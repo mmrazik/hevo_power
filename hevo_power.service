@@ -1,0 +1,11 @@
+[Unit]
+Description=Simple service to control SSR relay
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/hevo_power.py
+
+
+[Install]
+WantedBy=multi-user.target
