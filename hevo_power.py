@@ -15,7 +15,7 @@ BUTTON_PIN = 27
 SSR_PIN = 17
 
 GPIO.setmode(GPIO.BCM)
-GPIO.setup(BUTTON_PIN, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+GPIO.setup(BUTTON_PIN, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 GPIO.setup(SSR_PIN, GPIO.OUT)
 GPIO.output(SSR_PIN, 0)
 
